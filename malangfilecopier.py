@@ -1,6 +1,6 @@
 f1 = open("zh_cn.json","r",encoding="UTF-8")
 f2 = open("en_us.json","r",encoding="UTF-8")
-f3 = open("new.json","w",encoding="UTF-8")
+f3 = open("new_zh_cn.json","w",encoding="UTF-8")
 o1 = f1.read()
 o2 = f2.read()
 f2.seek(0)
