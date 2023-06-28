@@ -14,12 +14,12 @@ A piece of python code written to more conveniently update the language files of
 ## 使用方法
 1. 确保你安装了 Python（编写使用版本为 3.10）；
 2. 将此 .py 文件与需要处理的 zh_cn.json 和 en_us.json 放到同一目录下；
-3. 运行 .py 文件。新的 new.json 即为处理后所得的文件。
+3. 运行 .py 文件。新的 new_zh_cn.json 即为处理后所得的文件。
 
 ## 大致运行原理
 1. 从 en_us.json 中逐行提取 id；
 2. 将 id 在 zh_cn.json 中搜索，以得到已有的汉化名；若找不到此 id，程序会保留原英文名；
-3. 最后将所有结果进行拼接，将文本保存在新建的名为 new.json 的文件中。
+3. 最后将所有结果进行拼接，将文本保存在新建的名为 new_zh_cn.json 的文件中。
 
 ## 注意事项
 1. 所得的文件已经具备正常语言文件的格式（开头结尾的大括号和正确的行末逗号），替换掉原有的 zh_cn.json 即可在游戏中加载。
