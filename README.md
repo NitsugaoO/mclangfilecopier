@@ -9,6 +9,7 @@ A piece of python code written to more conveniently update the language files of
 问题来了：模组的作者究竟是添加了一行，减少了一行，抑或是将文件进行了格式化？
 逐行排查实在令人头大，本人也并未找到能完美胜任这一工作的文本对比软件。
 于是，在搜索少量 Python 知识后，本人凭借自己薄弱的编程功底写下了这段代码。
+本质上，此代码会将已有的汉化匹配到新的英文语言文件上。
 
 ## 使用方法
 1. 确保你安装了 Python（编写使用版本为 3.10）；
@@ -24,3 +25,4 @@ A piece of python code written to more conveniently update the language files of
 1. 所得的文件已经具备正常语言文件的格式（开头结尾的大括号和正确的行末逗号），替换掉原有的 zh_cn.json 即可在游戏中加载。
 2. 默认行首缩进为 2 个空格。
 3. 程序不会理会 zh_cn.json 中存在而 en_us.json 中不存在的（即 id 已经更改或删除）的条目，确保两文件的行数一致。
+4. 显然，你可以通过对代码进行简单的更改以使用其它语言文件 / 改变写入格式等。
