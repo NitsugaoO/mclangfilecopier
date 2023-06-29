@@ -1,8 +1,11 @@
 o1 = open("zh_cn.json", "r", encoding = "UTF-8").readlines()
 o2 = open("en_us.json", "r", encoding = "UTF-8").readlines()    #readlines方法将文件内容以列表形式返回
 f3 = open("new_zh_cn.json", "w", encoding = "UTF-8")
+n = -1
+while not "\"" in o2[n]:    #确定末项，忽略非有效条目
+    n = n - 1
 def wf(a, b):   #判断a是否为末项，是则将b的逗号去掉后写入f3，否则直接写入
-    if a == o2[-2]:
+    if a == o2[n]:
         f3.write(b[0:-2] + "\n")
     else:
         f3.write(b)
@@ -21,3 +24,4 @@ for i in o2:    #在英文文件中遍历i
     else:
         f3.write(i) #若是换行或大括号等非有效条目则直接写入
 f3.close()
+#By NitsugaoO
