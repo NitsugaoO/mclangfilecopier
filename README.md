@@ -1,7 +1,7 @@
 # MClangfilecopier
 A piece of python code written to more conveniently update the localization language files of Minecraft mods.
 
-为了更方便地更新 Minecraft 的语言文件而简单编写的一段 Python 代码。
+为了更方便地更新 Minecraft 模组的语言文件而简单编写的一段 Python 代码。
 
 ## 概述
 我经常在更新汉化文件时遇到这样的情况：
